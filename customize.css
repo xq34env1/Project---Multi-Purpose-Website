@@ -1,0 +1,32 @@
+#header
+{
+	text-align: center;
+}
+
+img
+{
+	width: 5%;
+	height: 10%;
+}
+
+#header, #main
+{
+	font-family: arial;
+}
+
+#main
+{
+	text-align: center;
+}
+
+#weightheader
+{
+	font-size: 25px;
+}
+
+#InputWeight
+{
+	height: 10%;
+	width: 10%;
+	font-size: 50px;
+}
