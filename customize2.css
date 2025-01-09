@@ -1,0 +1,41 @@
+#weightheader, #heightheader
+{
+	font-size: 25px;
+}
+
+#InputWeight, #InputHeight
+{
+	height: 5%;
+	width: 10%;
+	font-size: 50px;
+    border-radius: 20px;
+}
+
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#header2
+{
+	text-align: center;
+}
+
+img
+{
+	width: 5%;
+	height: 10%;
+}
+
+#header2, #main2
+{
+	font-family: arial;
+}
+
+#main2
+{
+	text-align: center;
+}
