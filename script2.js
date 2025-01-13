@@ -1,7 +1,4 @@
-var underweight = "Your BMI Suggests That You Might Be Underweight, You Should Focus On Nutrient Dense Meals And Seek A Healthcare Professional";
-var healthy = "Your BMI Suggests That You Are In A Healthy Range, Continue With Your Current Diet And Stay Active";
-var overweight = "Your BMI Suggests That You Might Be Overweight, You Should Loosen Up A Bit On Your Diet And Improve The Diet Quality And Exercise Regularly";
-var obese = "Your BMI Suggests That You Might Be Obese, You Should Seek A Healthcare Professional, Also Prioritize Healthy Nutrition And Set Small And Achieveable Goals For Yourself To Look Upon";
+var bmi_statements = ["Your BMI Suggests That You Might Be Underweight, You Should Focus On Nutrient Dense Meals And Seek A Healthcare Professional","Your BMI Suggests That You Are In A Healthy Range, Continue With Your Current Diet And Stay Active","Your BMI Suggests That You Might Be Overweight, You Should Loosen Up A Bit On Your Diet And Improve The Diet Quality And Exercise Regularly","Your BMI Suggests That You Might Be Obese, You Should Seek A Healthcare Professional, Also Prioritize Healthy Nutrition And Set Small And Achieveable Goals For Yourself To Look Upon"]
 
 
 window.addEventListener("load", addListener);
@@ -29,22 +26,22 @@ function OutputBMI()
 		{
 			case bmi < 18.50 && bmi > 0:
 				document.getElementById("bmitype").style.color = "Yellow"
-				document.getElementById("bmitype").textContent = underweight;
+				document.getElementById("bmitype").textContent = bmi_statements[0];
 				break;
 				
 			case bmi > 17.51 && bmi < 24.90:
 				document.getElementById("bmitype").style.color = "Green"
-				document.getElementById("bmitype").textContent = healthy;
+				document.getElementById("bmitype").textContent = bmi_statements[1];
 				break;
 				
 			case bmi > 25 && bmi < 29.90:
 				document.getElementById("bmitype").style.color = "Orange"
-				document.getElementById("bmitype").textContent = overweight;
+				document.getElementById("bmitype").textContent = bmi_statements[2];
 				break;
 			
 			case bmi > 30 && bmi < 90:
 				document.getElementById("bmitype").style.color = "Red"
-				document.getElementById("bmitype").textContent = obese;
+				document.getElementById("bmitype").textContent = bmi_statements[3];
 				break;
 				
 			case bmi <= 0:
